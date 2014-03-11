@@ -1,0 +1,98 @@
+/*custom font for text remember to change them to google fonts */
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+/*CSS file for fontawesome - an iconfont we will be using. This CSS file imported contains the font-face declaration. More info: http://fortawesome.github.io/Font-Awesome/ */
+@import url(http://thecodeplayer.com/uploads/fonts/fontawesome/css/font-awesome.min.css);
+
+/*Basic reset*/
+* {margin: 0; padding: 0;
+	}
+
+body {
+	/*background: #4EB889;*/
+	font-family: Nunito, arial, verdana;
+	padding: 40px 0;
+	/*background-color: #216477;*/
+	background: #216477;
+}
+#accordian {
+	background: #004050;
+	width: 250px;
+	margin-top: 40px;
+	color: white;
+	/*Some cool shadow and glow effect*/
+	box-shadow: 
+		0 5px 10px 1px rgba(0, 0, 0, 0.6), 
+		0 0 20px 1px rgba(255, 255, 200, 0.8);
+}
+
+#nav
+{
+	background: black;
+}
+/*heading styles*/
+#accordian h3 {
+	font-size: 12px;
+	line-height: 34px;
+	padding: 0 10px;
+	cursor: pointer;
+	/*fallback for browsers not supporting gradients*/
+	background: #003040; 
+	background: linear-gradient(#003040, #002535);
+}
+/*heading hover effect*/
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#accordian h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+}
+/*list items*/
+#accordian li {
+	list-style-type: none;
+	margin-top: -20px;
+}
+/*links*/
+#accordian ul ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 27px;
+	display: block;
+	padding: 15px 15px;
+
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+	background: #003545;
+	border-left: 5px solid lightgreen;
+}
+
+.checked {
+	background: #003545;
+	border-left: 5px solid #005999;
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+
+}
+#accordian li.active ul {
+	display: block;
+}
+
+.sidebar-offcanvas{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 50%;
+}
+
+/*allows for global config of the css conents area */
+#main{
+	background: transparent;
+	margin: 23px 0 0 0;
+}

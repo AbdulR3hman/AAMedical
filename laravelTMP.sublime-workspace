@@ -1,0 +1,272 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/hello.blade.php",
+			"settings":
+			{
+				"buffer_size": 129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/about.blade.php",
+			"settings":
+			{
+				"buffer_size": 26,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!doctype html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Laravel PHP Framework</title>\n	<style>\n		@import url(//fonts.googleapis.com/css?family=Lato:700);\n\n		body {\n			margin:0;\n			font-family:'Lato', sans-serif;\n			text-align:center;\n			color: #999;\n		}\n\n		.container {\n			width: 300px;\n			height: 200px;\n			position: absolute;\n			left: 50%;\n			top: 50%;\n			margin-left: -150px;\n			margin-top: -100px;\n		}\n\n		a, a:visited {\n			text-decoration:none;\n		}\n\n		h1 {\n			font-size: 32px;\n			margin: 16px 0 0 0;\n		}\n	</style>\n</head>\n<body>\n	<nav>\n		@section('nav')\n		<li>Home</li>\n		<li>About</li>\n		@yield_section \n	</nav>\n	<div class=\"container\">\n		@yield('main')\n	</div>\n</body>\n</html>\n",
+			"file": "app/views/layouts/master.blade.php",
+			"file_size": 745,
+			"file_write_time": 130361690490533880,
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"selected_items":
+		[
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/app/routes.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/vendor/predis/predis/lib/Predis/Helpers.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/vendor/symfony/console/Symfony/Component/Console/Helper/HelperSet.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/app/views/master.blade.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/app/config/app.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/app/config/database.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/app/views/home/about.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/public/.htaccess",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/app/views/home/about.blade.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/app/views/hello.blade.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravelTMP/public/index.php",
+		"/C/Users/AbdurRehman/Downloads/Desktops.zip",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/app/laravel.sublime-project",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/app/controllers/BaseController.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/app/config/database.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/app/routes.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/app/controllers/HomeController.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/app/laravelTMP.sublime-workspace",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/public/index.php",
+		"/C/Users/AbdurRehman/SkyDrive/laravel/app/models/User.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"blade"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/hello.blade.php",
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/home/about.blade.php",
+					"settings":
+					{
+						"buffer_size": 26,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/master.blade.php",
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								624,
+								624
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 259.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"helpers",
+				"vendor/symfony/console/Symfony/Component/Console/Helper/HelperSet.php"
+			],
+			[
+				"helper",
+				"vendor/predis/predis/lib/Predis/Helpers.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true
+}
