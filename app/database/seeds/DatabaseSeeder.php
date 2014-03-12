@@ -20,13 +20,99 @@ class DatabaseSeeder extends Seeder {
 		//$this->call('PatientsTableSeeder');	
 		//$this->call('UsersTableSeeder');
 		//$this->call('MedicsTableSeeder');
-		$this->call('AppointmentsTableSeeder');
-		$this->call('AmbulancesTableSeeder');
+		//$this->call('AppointmentsTableSeeder');
+		//$this->call('AmbulancesTableSeeder');
+		//$this->call('AppsPerMonthSeeder');
 
 
 	}
 
 }
+
+class AppsPerMonthSeeder extends Seeder {
+
+	/**
+	 * Run the database seeds.
+	 *
+	 * @return void
+	 */
+	public function run()
+	{
+
+		Eloquent::unguard();
+
+		DB::table('appsPerMonth')->delete();
+
+		AppsPerMonth::create(array(
+			'month' => '1',
+			'apps' => '0',
+		));
+
+		AppsPerMonth::create(array(
+			'month' => '2',
+			'apps' => '0',
+		));
+
+		AppsPerMonth::create(array(
+			'month' => '3',
+			'apps' => '0',
+		));
+
+		AppsPerMonth::create(array(
+			'month' => '4',
+			'apps' => '0',
+		));
+
+
+		AppsPerMonth::create(array(
+			'month' => '5',
+			'apps' => '0',
+		));
+
+
+
+		AppsPerMonth::create(array(
+			'month' => '6',
+			'apps' => '0',
+		));
+
+
+		AppsPerMonth::create(array(
+			'month' => '7',
+			'apps' => '0',
+		));
+
+
+		AppsPerMonth::create(array(
+			'month' => '8',
+			'apps' => '0',
+		));
+
+		AppsPerMonth::create(array(
+			'month' => '9',
+			'apps' => '0',
+		));
+
+
+		AppsPerMonth::create(array(
+			'month' => '10',
+			'apps' => '0',
+		));
+
+
+		AppsPerMonth::create(array(
+			'month' => '11',
+			'apps' => '0',
+		));
+
+
+		AppsPerMonth::create(array(
+			'month' => '12',
+			'apps' => '0',
+		));
+	}
+}
+
 
 class AmbulancesTableSeeder extends Seeder {
 

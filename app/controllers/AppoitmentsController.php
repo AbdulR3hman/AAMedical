@@ -106,8 +106,12 @@ class AppointmentsController extends \BaseController {
 		$m2->appointments()->attach($newApp);		//attach both medics to the pivot table
 		
 
+		//Update analtyical info for Apps Per Month table
+		$date = new Carbon(Cache::get('date'));
+		AppsPerMonth::data($date);
+
 		//for now return to medics, but remember to redirect to the page of appoitnments for that certain user
-		return Redirect::intended('/medics');
+		return Redirect::intended('/appointments/show/'.$patient->id);
 
 	}
 

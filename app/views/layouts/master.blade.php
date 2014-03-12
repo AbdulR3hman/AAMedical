@@ -44,10 +44,12 @@
                     <div class="col-sm-3 col-md-2 sidebar">
                         <div id="accordian">
                             <ul>
-                                <li>
+                                <li @if(Request::segments()[0] == 'dashboard')
+                                    class="active"
+                                    @endif>
                                     <h3><span class="glyphicon glyphicon-th-large"></span>Dashboard</h3>
                                     <ul>
-                                        <li><a href="#">Reports</a></li>
+                                        <li><a href="/dashboard">Dashboard</a></li>
                                         <li><a href="#">Search</a></li>
                                         <li><a href="#">Graphs</a></li>
                                         <li><a href="#">Settings</a></li>
@@ -85,6 +87,8 @@
                                 </li>
                                 <li @if(Request::segments()[0] == 'Calender')
                                     class="active"
+                                    @elseif(Request::segments()[0] == 'appointments')
+                                    class="active"
                                     @endif>
                                     <h3 ><span class="glyphicon glyphicon-calendar"></span>Calendar</h3>
                                     <ul  >
@@ -102,7 +106,9 @@
                         </div>
                     </div>
                     <div class="col-sm-9 col-sm-offset-3 col-md-8 col-md-offset-2 main" id="main">
+                        
                         @yield('main')
+
                     </div>
                 </div>
             </div>
@@ -113,6 +119,8 @@
             {{ HTML::script('js/bootstrap.min.js') }}
             {{ HTML::script('js/aam.js') }}
             {{ HTML::script('js/timer/bootstrap-datetimepicker.min.js') }}
+            {{ HTML::script('js/Chart.js') }}
+            {{ HTML::script('js/reports.js') }}
         </footer>
         
     </html>

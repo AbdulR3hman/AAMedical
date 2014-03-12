@@ -11,7 +11,7 @@ class HomeController extends BaseController {
 	| based routes. That's great! Here is an example controller method to
 	| get you started. To route to this controller, just add the route:
 	|
-	|	Route::get('/', 'HomeController@showWelcome');
+	|	Route::get('/', 'HomeController@showWelcome');  
 	|
 	*/
 
@@ -19,9 +19,15 @@ class HomeController extends BaseController {
 	{
 
 		$currentUser = Auth::user()->first_name;
-		View::share('name', $currentUser);
-		return View::make('hello');
+		$monthlyAppointments = AppsPerMonth::all();
+		$statistic = [];
+
+		for ($i=0; $i < 12 ; $i++) { 
+			$statistic[$i] = $monthlyAppointments[$i]->apps;
+		}
 		
+		View::share('name', $currentUser);
+		return View::make('Reports.dashboard')->with('data', $statistic);
 	}
 
 
