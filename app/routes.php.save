@@ -67,7 +67,7 @@ Route::get('/appointments/showMedic/{id}', array('before' => 'auth', 'uses' =>  
 //Main Routes:
 //Route::get('/', array('before' => 'auth.user', 'uses' => 'HomeController@checkuser'));
 Route::get('dashboard', array('before' => 'auth', 'uses' => 'HomeController@dashboard'));
-Route::get('/', 'HomeController@loginPage');
+//Route::get('/', 'HomeController@loginPage');
 
 //Log users in and keep session
 Route::post('checkuser', 'HomeController@logUserIn');
@@ -105,22 +105,21 @@ Route::get('/logout', 'HomeController@logUserOut');
 
 //Extra Routes :: (for temp use and quick access)
 
-/*
- Route::get('/', function()
- { 
- 	$user = new User;
- 	$user->email = 'admin@aam.io';
- 	$user->first_name = 'Asomm';
- 	$user->last_name = 'AName';
- 	$user->dob = '1982/05/18';
- 	$user->password = Hash::make('palestine');
- 	$user->activated = '1';
- 	$user->admin = '1';
 
- 	 $user->save();
- });
+ Route::get('/', function(// { 
+// 	$user = new User;
+// 	$user->email = 'admin@aam.com';
+// 	$user->first_name = 'Ahlam';
+// 	$user->last_name = 'AbuFaraj';
+// 	$user->dob = '1982/05/18';
+// 	$user->password = Hash::make('password');
+// 	$user->activated = '1';
+// 	$user->admin = '1';
 
-*/
+// 	 $user->save();
+// });
+
+
 
 
   

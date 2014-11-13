@@ -26,7 +26,7 @@
 	</th>
 	<?php $i = 0; ?>
 	<?php $j = 0; ?>
-	<?php $k = 1; ?>
+	<?php $k = 0; ?>
 	@foreach ($apps as $app)
 	<tbody>
 		<td>{{ $app->id}}</td>

@@ -31,10 +31,10 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href='logout'> sign out</a></li>
-                            <li><a href="#">Profile</a></li>
+                            <li><a href='/logout'> sign out</a></li>
+                            <li><a href="/#">Profile</a></li>
                             <a class="navbar-brand" href="#">Hi, {{ Auth::user()->first_name }}</a>
-                            <li><a href="#"><img src="{{asset('img/avatar.png')}}" width='24' height='24'></a></li>
+                            <li><a href="/#"><img src="{{asset('img/avatar.png')}}" width='24' height='24'></a></li>
                         </ul>
                     </div>
                 </div>

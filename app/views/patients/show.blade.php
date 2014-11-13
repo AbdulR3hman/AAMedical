@@ -47,7 +47,7 @@
 						<input type="text" class = "span 2" placeholder="Clinic Name" id="clinic" name="clinic" value ="{{$patient->doctor_name}}"required> </input>
 						<input type="text" class = "span 3" placeholder="Address line 1" id="cadd1" name="cadd1" value ="{{$patient->hline_add1}}" required > </input>
 						<input type="text" class = "span 3" placeholder="Address line 2" id="cadd2" name="cadd2" value ="{{$patient->hline_add2}}" > </input>
-						<input type="number" min='0000' class = "span 2" placeholder="Zip Code" id="cliniczipcode" value ="{{$patient->hzip_code}}" name="cliniczipcode" required> </input>
+						<input type="number" min='0000' class = "span 2" placeholder="Zip Code" id="cliniczipcode" name="cliniczipcode" value ="{{$patient->hzip_code}}" required> </input>
 					</div>
 				</div>
 				</br>
@@ -55,6 +55,8 @@
 					<div class="form-group">
 						<input type="date" class = "span 2" placeholder="Date of birth" class = "span 2" required id="dob" name="dob" value ="{{$patient->dob}}"> </input>
 						<input type="number" maxlength="3" step="any" max ='2.5' class = "span 2" placeholder="Height M" id="height" name="height" value ="{{$patient->height}}" required> </input>
+						
+						 
 						<input type="number" maxlength="3"  class = "span 2" placeholder="Weight KG" id="weight" name="weight" value ="{{$patient->weight}}"required> </input>
 						<input type="number" maxlength="3"  class = "span 2" placeholder="Failure %" id="failure" name="failure" value ="{{$patient->KFP}}"required> </input>
 					</div>
@@ -119,7 +121,7 @@
 							<div class="controls">
 								<button id="sumbit" name="sumbit" class="btn btn-primary btn-lg">Submit</button>
 								
-								<a href="/patients">
+								<a href="/patients/all">
 								<button class="btn btn-primary btn-lg " type="button"> Cancel Changes
 								</button></a>
 

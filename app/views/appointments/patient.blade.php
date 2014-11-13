@@ -42,8 +42,12 @@
 		<td>{{ $app->date}}</td>
 		<td>{{ $app->time}}</td>
 		
-		<td> <?php echo $medics[$i][$j]['id'] ?> </td>
-		<td> <?php echo $medics[$i][$k]['id'] ?> </td>
+		@if (isset($medics[$i][$j]['id']))
+                     <td> <?php echo $medics[$i][$j]['id'] ?> </td>
+                @endif
+                @if (isset($medics[$i][$k]['id']))
+                    <td> <?php echo $medics[$i][$k]['id'] ?> </td>
+                @endif
 		<?php $i=$i+1; ?>
 	</tbody>
 	@endforeach

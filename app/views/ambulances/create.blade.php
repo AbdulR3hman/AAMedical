@@ -13,7 +13,7 @@
 						<p><small>Full Name</small></p>
 						<input type="text" class = "span 2" placeholder="Plate Number" id="plate" name="plate" required> </input>
 						<input type="date" class = "span 2" placeholder="Enrollment Date" id="enro" name="enro"  required> </input>
-						<input type="number" maxlength="1" min="0" max="3" step="1" class="span2" placeholder="Ambulance Type" id="type" name="type" required>
+					<input type="number" maxlength="1" min="0" max="3" step="1" placeholder="Ambulance Type" id="type" name="type" required>
 
 					</div>
 				</div>

@@ -50,7 +50,7 @@ class AmbulancesController extends \BaseController {
 		$amb->type = Input::get('type');
 
 		$amb->save();
-		return Redirect::intended('/ambs');
+		return Redirect::intended('/ambs/all');
 	}
 
 	/**
@@ -80,7 +80,7 @@ class AmbulancesController extends \BaseController {
 
 		$amb->save();
 
-		return Redirect::intended('/ambs');
+		return Redirect::intended('/ambs/all');
 
 	}
 
@@ -112,7 +112,7 @@ class AmbulancesController extends \BaseController {
 		$d = Ambulance::find($id);
 		$d->delete();
 
-		return Redirect::intended('/ambs');
+		return Redirect::intended('/ambs/all');
 	}
 
 

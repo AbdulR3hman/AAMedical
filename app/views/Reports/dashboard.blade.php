@@ -12,7 +12,7 @@
 	data-sept="{{$data[8]}}"
 	data-oct="{{$data[9]}}"
 	data-nov="{{$data[10]}}"
-	data-dev="{{$data[11]}}"
+	data-dec="{{$data[11]}}"
 ></div>
 
 <div class="panel panel-default">

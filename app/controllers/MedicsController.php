@@ -81,7 +81,7 @@ class MedicsController extends BaseController {
 		$medic->zip_code = Input::get('pcode');
 		$medic->enrollment_type = Input::get('enrotype');
 		$medic->enrollment_date = input::get('enrodate');
-		$medic->avaliable = input::get('aval');
+		$medic->available = input::get('aval');
 		$medic->notes=Input::get('notes');
 		$medic->save();
 
@@ -92,7 +92,7 @@ class MedicsController extends BaseController {
 	/**
 	 * Returns the medics who are free now
 	 *
-	 * @param  
+	 * @param 
 	 * @return Response
 	 */
 	public function now()

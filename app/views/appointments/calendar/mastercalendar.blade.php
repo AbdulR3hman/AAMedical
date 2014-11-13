@@ -28,27 +28,37 @@
 	<?php $i = 0; ?>
 	<?php $j = 0; ?>
 	<?php $k = 1; ?>
-	@foreach ($apps as $app)
+	
+	@if (isset($apps) )
 
-	<tbody>
-		<td>{{ $app->id}}</td>
-		<td>{{ $app->patient_id }}</td>
-		<td>{{ $app->ambulance_id }}</td>
-		<td>{{ $app->from_add_1 }} </td>
-		<td>{{ $app->from_add_2}} </td>
-		<td>{{ $app->from_zip_code}}</td>
-		<td>{{ $app->to_add_1 }} </td>
-		<td>{{$app->to_add_2}} </td>
-		<td>{{ $app->to_zip_code}}</td>
-		<td>{{ $app->date}}</td>
-		<td>{{ $app->time}}</td>
-		
-		<td> <?php echo $medics[$i][$j]['id'] ?> </td>
-		<td> <?php echo $medics[$i][$k]['id'] ?> </td>
-		<?php $i=$i+1; ?>
-	</tbody>
-	@endforeach
-</table>
+		@foreach ($apps as $app)
+
+		<tbody>
+			<td>{{ $app->id}}</td>
+			<td>{{ $app->patient_id }}</td>
+			<td>{{ $app->ambulance_id }}</td>
+			<td>{{ $app->from_add_1 }} </td>
+			<td>{{ $app->from_add_2}} </td>
+			<td>{{ $app->from_zip_code}}</td>
+			<td>{{ $app->to_add_1 }} </td>
+			<td>{{$app->to_add_2}} </td>
+			<td>{{ $app->to_zip_code}}</td>
+			<td>{{ $app->date}}</td>
+			<td>{{ $app->time}}</td>
+			
+			@if (isset($medics[$i][$j]['id']))
+				<td> <?php echo $medics[$i][$j]['id'] ?> </td>
+			@endif
+			@if (isset($medics[$i][$k]['id']))
+				<td> <?php echo $medics[$i][$k]['id'] ?> </td>
+			@endif
+			<?php $i=$i+1; ?>
+		</tbody>
+		@endforeach
+	@endif
+	</table>
+	 
+
 </div>
 </div>
 @endsection

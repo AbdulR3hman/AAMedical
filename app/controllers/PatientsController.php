@@ -59,6 +59,10 @@ class PatientsController extends \BaseController {
 			$patient->hline_add1 = Input::get('cadd1');
 			$patient->hline_add2 = Input::get('cadd2');
 			$patient->hzip_code = Input::get('cliniczipcode');
+			$patient->weight=Input::get('weight');
+			$patient->height=Input::get('height');
+			$patient->dob = Input::get('dob');
+			$patient->KFP = Input::get('failure');
 			$patient->transfer_type = input::get('transport');
 			$patient->schedule_type = input::get('schedule');
 			$patient->notes=Input::get('notes');
@@ -76,7 +80,7 @@ class PatientsController extends \BaseController {
 	public function show($id)
 	{
 		$patient = Patient::find($id);
-		
+	
 		return View::make('patients.show')->with('patient', $patient);
 
 

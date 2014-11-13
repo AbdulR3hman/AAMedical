@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder {
 		//$this->call('MedicsTableSeeder');
 		//$this->call('AppointmentsTableSeeder');
 		//$this->call('AmbulancesTableSeeder');
-		//$this->call('AppsPerMonthSeeder');
+		$this->call('AppsPerMonthSeeder');
 
 
 	}

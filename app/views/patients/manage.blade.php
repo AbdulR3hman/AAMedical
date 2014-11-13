@@ -28,7 +28,7 @@
 		<td>{{ $patient->id}}</td>
 		<td>{{ $patient->first_name }}</td>
 		<td>{{ $patient->last_name }}</td>
-		<td>{{ $patient->hline_add1 }}  {{ $patient->line_add2 }} </td>
+		<td>{{ $patient->line_add1 }}  {{ $patient->line_add2 }} </td>
 		<td>{{ $patient->zip_code }}</td>
 		<td>{{ $patient->contact }}</td>
 		<td>{{ $patient->dob }}</td>
